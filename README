@@ -10,3 +10,18 @@ This is a basic scaffolding to get started with a new React project without the 
 ### Fire it up
 1. Run `npm start`
 2. Go to `localhost:8080`
+
+### Static Analysis
+#### Flow
+Flow is like TypeScript but more incremental. You can specify which files to include in the analysis by adding the `//@flow` decorator at the top of any file. Analysis can be run by issuing:
+
+```shell
+npm run flow
+```
+
+#### ESLint
+ESLint is set up. You can run it with:
+
+```shell
+npm run lint
+```

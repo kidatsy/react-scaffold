@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode=development --hot",
     "build": "webpack --mode=production",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "lint": "eslint --ext .js,.jsx ./src",
     "flow": "flow"
   },
@@ -30,6 +30,7 @@
     "@babel/preset-flow": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
     "babel-eslint": "^10.1.0",
+    "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.3",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
@@ -41,6 +42,7 @@
     "eslint-plugin-react-hooks": "^4.2.0",
     "flow-bin": "^0.163.0",
     "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.3.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.62.1",
     "webpack-cli": "^4.9.1",
