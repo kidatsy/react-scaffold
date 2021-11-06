@@ -28,4 +28,17 @@ module.exports = {
   },
   rules: {
   },
+  overrides: [
+    {
+      files: [
+        '*.test.js',
+        '__test__.js',
+        '*.test.jsx',
+        '__test__.jsx',
+      ],
+      rules: {
+        'import/no-extraneous-dependencies': 'off',
+      }
+    },
+  ],
 };

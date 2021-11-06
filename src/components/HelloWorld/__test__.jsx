@@ -1,6 +1,5 @@
-import * as React from 'react';
 import { render } from '@testing-library/react';
-import HelloWorld from './HelloWorld';
+import HelloWorld from './index';
 
 test('HelloWorld renders correctly', () => {
   const component = render(<HelloWorld />);
