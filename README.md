@@ -7,6 +7,7 @@ This is a basic scaffolding to get started with a new React project without the 
 - [x] Flow
 - [x] ESLint
 - [x] Jest
+- [X] CI via GitHub Actions
 
 ### Fire it up
 1. Run `npm start`
