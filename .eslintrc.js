@@ -26,14 +26,4 @@ module.exports = {
   },
   rules: {
   },
-  // settings: {
-  //   react: {
-  //     version: 'detect',
-  //   },
-  //   'import/resolver': {
-  //     webpack: {
-  //       config: './webpack.config.js',
-  //     },
-  //   },
-  // },
 };
