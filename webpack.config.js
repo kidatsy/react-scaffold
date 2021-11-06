@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -20,6 +21,9 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
+        options: {
+          plugins: ['lodash'],
+        }
       },
       {
         test: /\.css$/,
@@ -31,6 +35,9 @@ module.exports = {
     ],
   },
   plugins: [
+    new LodashModuleReplacementPlugin({
+      collections: true,
+    }),
     new webpack.ProvidePlugin({
       _: 'lodash',
       React: 'react',

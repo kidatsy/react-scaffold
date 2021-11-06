@@ -8,7 +8,7 @@
     "build": "webpack --mode=production",
     "test": "jest",
     "lint": "eslint --ext .js,.jsx ./src",
-    "flow": "flow"
+    "typecheck": "flow"
   },
   "keywords": [
     "react",
@@ -34,6 +34,7 @@
     "babel-eslint": "^10.1.0",
     "babel-jest": "^27.3.1",
     "babel-loader": "^8.2.3",
+    "babel-plugin-lodash": "^3.3.4",
     "css-loader": "^6.5.1",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",
@@ -46,6 +47,7 @@
     "flow-bin": "^0.163.0",
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.3.1",
+    "lodash-webpack-plugin": "^0.11.6",
     "react-test-renderer": "^17.0.2",
     "style-loader": "^3.3.1",
     "webpack": "^5.62.1",

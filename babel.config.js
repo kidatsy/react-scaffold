@@ -7,5 +7,6 @@ module.exports = {
   plugins: [
     '@babel/plugin-transform-react-jsx',
     '@babel/plugin-transform-flow-strip-types',
+    'lodash',
   ],
 };

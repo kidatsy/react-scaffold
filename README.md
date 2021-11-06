@@ -1,11 +1,12 @@
 ## React Scaffold
 This is a basic scaffolding to get started with a new React project without the bloat and faff of CRA. It includes the following:
-- Redux
-- Redux-saga
-- Lodash
-- Flow
-- ESLint
-- Jest
+- [ ] Axios
+- [ ] Redux
+- [ ] Redux-saga
+- [x] Lodash
+- [x] Flow
+- [x] ESLint
+- [x] Jest
 
 ### Fire it up
 1. Run `npm start`
@@ -15,7 +16,7 @@ This is a basic scaffolding to get started with a new React project without the 
 #### Flow
 Flow is like TypeScript but more incremental. You can specify which files to include in the analysis by adding the `//@flow` decorator at the top of any file. Analysis can be run by issuing:
 ```shell
-npm run flow
+npm run typecheck
 ```
 
 #### ESLint
