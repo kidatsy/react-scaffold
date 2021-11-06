@@ -1,7 +1,7 @@
 {
   "name": "react-scaffold",
   "version": "0.1.0",
-  "description": "A boilerplate scaffold for getting started with a React app without relying on CRA",
+  "description": "Barebones React scaffold for getting a React project off the ground without relying on CRA",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --open --hot",
