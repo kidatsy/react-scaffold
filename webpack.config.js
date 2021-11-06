@@ -1,4 +1,5 @@
 const path = require('path');
+const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -11,32 +12,31 @@ module.exports = {
     alias: {
       react: path.join(__dirname, 'node_modules', 'react'),
     },
+    extensions: ['*', '.js', '.jsx'],
   },
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-        },
+        loader: 'babel-loader',
       },
       {
         test: /\.css$/,
         use: [
-          {
-            loader: 'style-loader',
-          },
-          {
-            loader: 'css-loader',
-          },
+          { loader: 'style-loader' },
+          { loader: 'css-loader' },
         ],
-      },
+      }
     ],
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      _: 'lodash',
+      React: 'react',
+    }),
     new HtmlWebPackPlugin({
-      template: './public/index.html',
+      template: './assets/index.html',
     }),
   ],
 };

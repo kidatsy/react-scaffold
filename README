@@ -1,0 +1,12 @@
+## React Scaffold
+This is a basic scaffolding to get started with a new React project without the bloat and faff of CRA. It includes the following:
+- Redux
+- Redux-saga
+- Lodash
+- Flow
+- ESLint
+- Jest
+
+### Fire it up
+1. Run `npm start`
+2. Go to `localhost:8080`
