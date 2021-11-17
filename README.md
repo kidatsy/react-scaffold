@@ -3,7 +3,7 @@ This is a basic scaffolding to get started with a new React project without the 
 - [x] Axios
 - [x] Redux
 - [x] Redux-saga
-- [ ] Request/Success/Failure Middleware/Saga, based on presence of request in action
+- [x] Requested/Succeeded/Failed Middleware/Saga, based on presence of request in action
 - [x] Lodash
 - [x] Flow
 - [x] ESLint
