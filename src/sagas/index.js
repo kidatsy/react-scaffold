@@ -1,4 +1,6 @@
 import { combineSagas } from 'utils/sagas';
-// import sagas from the local folder here
+import apiRequests from './apiRequests';
 
-export default combineSagas([]);
+export default combineSagas([
+  apiRequests,
+]);
