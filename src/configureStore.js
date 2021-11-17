@@ -3,8 +3,8 @@ import { applyMiddleware, compose, createStore } from 'redux';
 import createSagaMiddleware from 'redux-saga';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { composeWithDevTools } from 'redux-devtools-extension';
-import rootReducer from './reducers';
-import sagas from './sagas';
+import rootReducer from 'reducers';
+import sagas from 'sagas';
 
 const configureStore = () => {
   const sagaMiddleware = createSagaMiddleware();
