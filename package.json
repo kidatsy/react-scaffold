@@ -15,7 +15,7 @@
     "boilerplate"
   ],
   "author": "kidatsy",
-  "license": "MIT",
+  "license": "GNU General Public License v3.0",
   "engines": {
     "node": ">=16.0.0",
     "npm": ">=8.0.0"
