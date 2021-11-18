@@ -1,7 +1,7 @@
 {
   "name": "react-scaffold",
   "version": "0.1.0",
-  "description": "Barebones React scaffold for getting a React project off the ground without relying on CRA",
+  "description": "React scaffold for getting a React project off the ground without relying on CRA",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --mode=development --hot",
@@ -23,6 +23,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "lodash": "^4.17.21",
+    "normalizr": "^3.6.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.6",

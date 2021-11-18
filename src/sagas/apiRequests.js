@@ -1,15 +1,12 @@
-import {
-  takeEvery,
-  put,
-  call,
-} from 'redux-saga/effects';
+import { put, call } from 'redux-saga/effects';
 import {
   isRequestedAction,
   isSucceededAction,
   isFailedAction,
   createSucceededAction,
   createFailedAction,
-} from 'utils/apiRequests';
+} from 'utils/actions';
+import { combineActionHandlers } from 'utils/sagas';
 
 function* handleRequestedActions(action) {
   try {
@@ -30,8 +27,8 @@ function* handleErrorActions(action) {
   console.log(action.error);
 }
 
-export default function* watchForApiRequestActions() {
-  yield takeEvery(isRequestedAction, handleRequestedActions);
-  yield takeEvery(isSucceededAction, handleSuccessActions);
-  yield takeEvery(isFailedAction, handleErrorActions);
-}
+export default combineActionHandlers([
+  [isRequestedAction, handleRequestedActions],
+  [isSucceededAction, handleSuccessActions],
+  [isFailedAction, handleErrorActions],
+]);
