@@ -2,6 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   module: {
@@ -34,6 +35,7 @@ module.exports = {
     new HtmlWebPackPlugin({
       template: './assets/index.html',
     }),
+    new Dotenv(),
   ],
   resolve: {
     modules: [
