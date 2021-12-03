@@ -18,8 +18,8 @@ This is a basic scaffold to get started with a new React project without (all) t
 It's probably a good idea to use something like `nodenv`. We've included a `.node-version` file to make sure your nodenv uses a matching version of node with it.
 
 ### Fire it up
-1. Run `npm start`
-2. Go to `localhost:8080`
+1. Run `npm run dev`
+2. Go to `localhost:3000`
 
 ### Static Analysis
 

@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render } from 'utils/testing';
 import HelloWorld from './index';
 
 test('HelloWorld renders correctly', () => {

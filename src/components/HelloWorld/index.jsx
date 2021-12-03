@@ -1,10 +1,11 @@
+import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { fetchUsers } from 'actions/users';
 
 const HelloWorld = () => {
   const dispatch = useDispatch();
 
-  React.useEffect(() => {
+  useEffect(() => {
     dispatch(fetchUsers());
   }, []);
 

@@ -4,7 +4,7 @@
   "description": "React scaffold for getting a React project off the ground without relying on CRA",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode=development --hot",
+    "dev": "webpack-dev-server --mode=development --hot",
     "build": "webpack --mode=production",
     "test": "jest",
     "lint": "eslint --ext .js,.jsx ./src"
@@ -36,6 +36,7 @@
     "@babel/plugin-transform-react-jsx": "^7.16.0",
     "@babel/preset-env": "^7.16.0",
     "@babel/preset-react": "^7.16.0",
+    "@reduxjs/toolkit": "^1.6.2",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
     "babel-eslint": "^10.1.0",
