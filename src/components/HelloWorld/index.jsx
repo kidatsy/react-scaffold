@@ -1,9 +1,8 @@
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { fetchUsers } from 'actions/users';
 
 const HelloWorld = () => {
   const dispatch = useDispatch();
-  const users = useSelector(state => state.users);
 
   React.useEffect(() => {
     dispatch(fetchUsers());

@@ -3,7 +3,7 @@ import {
   createRequestedAction,
 } from 'utils/actions';
 
-const transformApiRequest = store => next => action => {
+const transformApiRequest = store => next => (action) => {
   if (isOriginalRequestAction(action)) {
     return store.dispatch(createRequestedAction(action));
   }

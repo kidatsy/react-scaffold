@@ -19,12 +19,14 @@ function* handleRequestedActions(action) {
 
 function* handleSuccessActions(action) {
   // SETUP: This is here as an example. You'll most likely want to remove in real use
-  console.log(action.response);
+  // eslint-disable-next-line no-console
+  yield console.log(action.response);
 }
 
 function* handleErrorActions(action) {
   // SETUP: Hook up your own error reporting tooling here
-  console.log(action.error);
+  // eslint-disable-next-line no-console
+  yield console.log(action.error);
 }
 
 export default combineActionHandlers([

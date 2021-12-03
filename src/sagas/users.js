@@ -10,7 +10,7 @@ import { combineActionHandlers } from 'utils/sagas';
 
 function* normalize(action) {
   const normalizedData = normalizeData(action.response.data.results, 'users');
-  yield put(createNormalizedAction(pick(action , ['type']), normalizedData.result));
+  yield put(createNormalizedAction(pick(action, ['type']), normalizedData.result));
 }
 
 export default combineActionHandlers([

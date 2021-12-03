@@ -33,7 +33,9 @@ module.exports = {
     },
   },
   rules: {
-    'max-len':0,
+    'arrow-parens': [2, 'as-needed', { requireForBlockBody: true }],
+    'import/prefer-default-export': 0,
+    'max-len': 0,
   },
   overrides: [
     {

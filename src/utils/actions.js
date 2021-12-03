@@ -23,7 +23,7 @@ const modifyActionType = (action, requestSuffix, additionalData = {}) => {
   };
 };
 
-export const createRequestedAction = (action) => modifyActionType(action, ACTION_SUFFIX_REQUESTED);
+export const createRequestedAction = action => modifyActionType(action, ACTION_SUFFIX_REQUESTED);
 export const createSucceededAction = (action, response) => modifyActionType(action, ACTION_SUFFIX_SUCCEEDED, { response });
 export const createFailedAction = (action, error) => modifyActionType(action, ACTION_SUFFIX_FAILED, { error });
 export const createNormalizedAction = (action, data) => modifyActionType(action, ACTION_SUFFIX_NORMALIZED, { data });
@@ -34,7 +34,7 @@ export const isSucceededAction = action => action.request && action.type.endsWit
 export const isFailedAction = action => action.request && action.type.endsWith(`_${ACTION_SUFFIX_FAILED}`);
 export const isNormalizedAction = action => action.type.endsWith(`_${ACTION_SUFFIX_NORMALIZED}`);
 
-export const hasRequested = (actionName) => `${actionName}_${ACTION_SUFFIX_REQUESTED}`;
-export const hasSucceeded = (actionName) => `${actionName}_${ACTION_SUFFIX_SUCCEEDED}`;
-export const hasFailed = (actionName) => `${actionName}_${ACTION_SUFFIX_FAILED}`;
-export const hasNormalized = (actionName) => `${actionName}_${ACTION_SUFFIX_NORMALIZED}`;
+export const hasRequested = actionName => `${actionName}_${ACTION_SUFFIX_REQUESTED}`;
+export const hasSucceeded = actionName => `${actionName}_${ACTION_SUFFIX_SUCCEEDED}`;
+export const hasFailed = actionName => `${actionName}_${ACTION_SUFFIX_FAILED}`;
+export const hasNormalized = actionName => `${actionName}_${ACTION_SUFFIX_NORMALIZED}`;
