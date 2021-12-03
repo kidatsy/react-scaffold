@@ -4,17 +4,6 @@ const LodashModuleReplacementPlugin = require('lodash-webpack-plugin');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  output: {
-    path: path.resolve(__dirname, 'build'),
-    filename: 'bundle.js',
-  },
-  resolve: {
-    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-    alias: {
-      react: path.join(__dirname, 'node_modules', 'react'),
-    },
-    extensions: ['*', '.js', '.jsx'],
-  },
   module: {
     rules: [
       {
@@ -46,6 +35,20 @@ module.exports = {
       template: './assets/index.html',
     }),
   ],
+  resolve: {
+    modules: [
+      path.resolve(__dirname, 'src'),
+      'node_modules',
+    ],
+    alias: {
+      react: path.join(__dirname, 'node_modules', 'react'),
+    },
+    extensions: ['*', '.js', '.jsx'],
+  },
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: 'bundle.js',
+  },
   devServer: {
     port: 3000,
     historyApiFallback: true,

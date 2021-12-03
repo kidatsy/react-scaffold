@@ -25,6 +25,13 @@ module.exports = {
     _: 'readonly',
     React: 'readonly',
   },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: './webpack.config.js',
+      },
+    },
+  },
   rules: {
     'max-len':0,
   },
