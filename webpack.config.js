@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js',
   },
   resolve: {
-    modules: [path.join(__dirname, 'src'), 'node_modules'],
+    modules: [path.resolve(__dirname, 'src'), 'node_modules'],
     alias: {
       react: path.join(__dirname, 'node_modules', 'react'),
     },
@@ -46,4 +46,8 @@ module.exports = {
       template: './assets/index.html',
     }),
   ],
+  devServer: {
+    port: 3000,
+    historyApiFallback: true,
+  },
 };

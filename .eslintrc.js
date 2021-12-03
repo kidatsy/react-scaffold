@@ -19,7 +19,6 @@ module.exports = {
   },
   plugins: [
     'react',
-    'flowtype',
     'jest',
   ],
   globals: {
@@ -27,6 +26,7 @@ module.exports = {
     React: 'readonly',
   },
   rules: {
+    'max-len':0,
   },
   overrides: [
     {
