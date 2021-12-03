@@ -1,18 +1,20 @@
 ## React Scaffold
 This is a basic scaffold to get started with a new React project without (all) the bloat and faff of CRA. It includes the following:
 - [x] Axios
-- [ ] GraphQL
 - [x] Redux
 - [x] Redux-saga
 - [x] Requested/Succeeded/Failed Middleware/Saga, based on presence of request in action
-- [ ] React Router
 - [x] Lodash
 - [x] Normalizr
-- [ ] Dotenv
-- [ ] TypeScript/Flow
+- [x] React Router
 - [x] ESLint
 - [x] Jest
 - [X] CI via GitHub Actions
+
+Todo:
+- [ ] GraphQL
+- [ ] Dotenv
+- [ ] TypeScript/Flow
 
 ### Prerequisites
 It's probably a good idea to use something like `nodenv`. We've included a `.node-version` file to make sure your nodenv uses a matching version of node with it.
